@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap">
+ <Identity Name="Melee.UWP.GameTest" Publisher="@MELEE_UWP_PUBLISHER@" Version="0.0.2.0" ProcessorArchitecture="x64"/>
+ <Properties><DisplayName>Melee UWP Test</DisplayName><PublisherDisplayName>Melee UWP Development</PublisherDisplayName><Logo>Assets/StoreLogo.png</Logo></Properties>
+ <Dependencies><TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.19041.0" MaxVersionTested="10.0.26100.0"/>
+ <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.33519.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"/></Dependencies>
+ <Resources><Resource Language="en-us"/></Resources>
+ <Applications><Application Id="App" Executable="melee-uwp.exe" EntryPoint="Melee.UWP.GameTest.App">
+ <uap:VisualElements DisplayName="Melee UWP Test" Description="Experimental Melee UWP launcher and direct USB game access." Square150x150Logo="Assets/Square150x150Logo.png" Square44x44Logo="Assets/Square44x44Logo.png" BackgroundColor="#101820"><uap:SplashScreen Image="Assets/SplashScreen.png"/></uap:VisualElements>
+ <Extensions><uap:Extension Category="windows.fileTypeAssociation"><uap:FileTypeAssociation Name="melee-uwp-data"><uap:SupportedFileTypes><uap:FileType>.iso</uap:FileType><uap:FileType>.gcm</uap:FileType><uap:FileType>.ciso</uap:FileType><uap:FileType>.rvz</uap:FileType><uap:FileType>.gcz</uap:FileType><uap:FileType>.wia</uap:FileType><uap:FileType>.gci</uap:FileType><uap:FileType>.raw</uap:FileType><uap:FileType>.db</uap:FileType><uap:FileType>.ini</uap:FileType><uap:FileType>.json</uap:FileType><uap:FileType>.txt</uap:FileType><uap:FileType>.log</uap:FileType><uap:FileType>.bin</uap:FileType><uap:FileType>.png</uap:FileType><uap:FileType>.dds</uap:FileType></uap:SupportedFileTypes></uap:FileTypeAssociation></uap:Extension></Extensions>
+ </Application></Applications>
+ <Capabilities><Capability Name="internetClientServer"/><Capability Name="privateNetworkClientServer"/><uap:Capability Name="removableStorage"/></Capabilities>
+</Package>
