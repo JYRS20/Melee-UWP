@@ -4,7 +4,7 @@ Experimental UWP adaptation of [Melee-PC](https://github.com/999sian/melee-pc), 
 
 The adaptation keeps the original PC launcher and menus, reads the user-supplied disc directly from USB, and stores saves, settings and caches under `Melee-UWP` on that drive. Supported starting point: USA 1.02 (GALE01, revision 2).
 
-The original launcher and a short direct-disc boot have been verified locally in a Windows UWP AppContainer. Xbox gameplay, performance, controller behavior, audio and online compatibility still require testing. This is development source; no release is available yet.
+Xbox gameplay and an online Direct Connect session have been reported working by the tester. Windows UWP launch and direct USB disc access have also been verified locally. This remains experimental: four-player local play, Android crossplay and long-session stability have not been validated. Version 0.0.3 also removes the white rectangle from the startup splash.
 
 ## Source and credits
 
